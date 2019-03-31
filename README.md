@@ -7,7 +7,6 @@
   
 run make
  
-To create user
 users created:
 
    username:'acc1'         password:'pass'
