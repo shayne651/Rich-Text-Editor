@@ -1,0 +1,20 @@
+html
+	head
+	script(src='/Scripts/editor.js')
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+	img(src='/img/edit.png' id='imgE')
+	p
+	button(onclick="makeBold()") B
+	button(onclick="makeItalic()") I
+	input(type='text',id='fontSize' placeholder='Font Size')
+	button(onclick='makeFont()') Change Font Size
+		style
+			include editor.css
+	body(onload='checkVals()')
+	form(id='sub',method="POST", action='/')
+			textarea(id='content',name='content')= content
+			input(type='hidden',id='bold',name='bold', value=bold)
+			input(type='hidden',id='italic',name='italic',value=italics)
+			input(type='hidden',id='font_size',name='font_size',value=fontsize)
+			input(type='hidden',id='username',name='username',value=username)
+			button(type=submit) save

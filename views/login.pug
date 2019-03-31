@@ -1,0 +1,14 @@
+html
+	head
+		style
+			include login.css
+	body
+	img(src='/img/edit.png' id='imgE')
+	form(id='login',method="POST", action='/auth')
+			label Username: 
+			input(type='text',id='username',name='username')
+			p
+			label Password: 
+			input(type='password',id='pass',name='pass')
+			p
+			button(type=submit) Submit
