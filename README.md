@@ -4,7 +4,8 @@
 3. run node server.js
 
   OR 
- run make
+  
+run make
  
 To create user
 users created:
