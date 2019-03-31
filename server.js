@@ -11,7 +11,7 @@ var urlEncode = parser.urlencoded({extended:false});
 app.use(express.static('resources'));
 app.set('view engine','pug');
 
-var server = app.listen(3002,function(){
+var server = app.listen(3000,function(){
 	console.log("working");
 });
 
@@ -28,8 +28,8 @@ app.post('/auth',urlEncode,function(req,res){
 		if(obj.password == pass){
 			url='mongodb://localhost:27017/textContent';
 			mongoose.connect(url);
-			MongoClient.connect(url, function(err, db) {
-			var dataobject = db.db("textContent").collection("textContent");
+			MongoClient.connect(url, function(err, obj) {
+			var dataobject = obj.db("textContent").collection("textContent");
 				if (err) throw err;
 				dataobject.findOne({username:username},function(err,obj){
 					if (err) {
