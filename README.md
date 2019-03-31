@@ -9,9 +9,15 @@ run make
  
 To create user
 users created:
+
    username:'acc1'         password:'pass'
+   
    username:'acc2'         password:'pass1'
+   
    username:'profile1'     password:'secret'
+   
    username:'account'      password:'notpassword'
+   
    username:'fake-login'   password:'realpassword'
+   
    username:'notanaccount' password:'justkidding' 
