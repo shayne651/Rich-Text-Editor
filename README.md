@@ -1,4 +1,4 @@
-# webFinal
+# Rich Text Editor
 1. run node mongoCreate.js
 2. run node mongoText.js
 3. run node server.js
